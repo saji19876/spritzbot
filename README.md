@@ -14,7 +14,7 @@ directory:
 	$ source venv/bin/activate
 	$ pip install -r requirements.txt
 
-Finally, inside bot source directory, 
+Finally, inside bot source directory,
 
 	$ cp config_example.py to config.py
 
@@ -30,11 +30,11 @@ creating your app and getting your access token.
 
 ## Usage:
 
-    $ source venv/bin/python
-	$ python spritzbot/run.py
+    $ source venv/bin/activate
+    $ python spritzbot/run.py
 
 This will execute the app and start streaming. Events will be handed over to
-plugins as and when they come in. 
+plugins as and when they come in.
 
 ## Authoring Plugins:
 
@@ -64,7 +64,7 @@ change.
 
 	def process(status):
    		return "%s: %s" %(status['user']['screen_name'], status['text'])
-    
+
 
 That is all!
 
